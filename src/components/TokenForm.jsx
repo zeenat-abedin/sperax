@@ -77,8 +77,10 @@ function TokenForm() {
       <h2>Transfer ERC20 Tokens</h2>
       <form onSubmit={handleTransferSubmit} className='form-container'>
         <div className='input-group mb-3'>
-        <label>Recipient Address:</label>
-        <input type="text" value={recipient} onChange={(e) => setRecipient(e.target.value)} required />
+            <label>Recipient's Ethereum Address</label>
+            <input type="text" placeholder='Enter Ethereum Address' value={recipient} onChange={(e) => setRecipient(e.target.value)} required />
+            <label>Token Amount</label>
+            <input type='text' value={amount} onChange={(e)=>setAmount(e.target.value)} required/>
           <button type="submit">Transfer</button>
         </div>
       </form>
