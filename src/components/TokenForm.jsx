@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Web3 from 'web3';
 import { ethers } from 'ethers'
 import ContractABI from '../contracts/Token.json'
+import NavBar from './Navbar';
 
 const web3 = new Web3(Web3.givenProvider || 'http://localhost:8545'); // Use your preferred provider
 
@@ -59,7 +60,6 @@ function TokenForm() {
 
   return (
     <div>
-      <h1>ERC20 Token Interaction</h1>
       <form onSubmit={handleBalanceSubmit}>
         <label>Enter Ethereum Address:</label>
         <input type="text" value={address} onChange={(e) => setAddress(e.target.value)} required />

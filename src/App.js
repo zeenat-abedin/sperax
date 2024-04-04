@@ -1,9 +1,13 @@
+import NavBar from "./components/Navbar";
 import TokenForm from "./components/TokenForm";
+
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div>
-      <TokenForm/>
+      <NavBar/>
+      {/* <TokenForm/> */}
     </div>
   );
 }
