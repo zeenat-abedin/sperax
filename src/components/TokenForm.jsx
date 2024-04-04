@@ -2,8 +2,7 @@ import { useState } from 'react';
 import Web3 from 'web3';
 import { ethers } from 'ethers'
 import ContractABI from '../contracts/Token.json'
-import NavBar from './Navbar';
-
+import './form.css'
 const web3 = new Web3(Web3.givenProvider || 'http://localhost:8545'); // Use your preferred provider
 
 
@@ -59,23 +58,31 @@ function TokenForm() {
   };
 
   return (
-    <div>
-      <form onSubmit={handleBalanceSubmit}>
-        <label>Enter Ethereum Address:</label>
-        <input type="text" value={address} onChange={(e) => setAddress(e.target.value)} required />
-        <button type="submit">Check Balance</button>
-      </form>
+    <div className='container'>
+      <div id="form-one">
+        <h2>ERC20 Token Balance</h2>
+        <form onSubmit={handleBalanceSubmit} className='form-container'>
+        <div className='input-group mb-3'>
+          <label>Ethereum Address</label>
+          <input type="text" placeholder='Enter Ethereum Address' value={address} onChange={(e) => setAddress(e.target.value)} required />
+          <button type="submit">Submit</button>
+        </div>
+        </form>
+      </div>
       {loadingBalance && <p>Loading balance...</p>}
       {balance && <p>Balance: {balance}</p>}
       {error && <p>{error}</p>}
-
-      <form onSubmit={handleTransferSubmit}>
+      
+      <div id="form-two">
+      <h2>Transfer ERC20 Tokens</h2>
+      <form onSubmit={handleTransferSubmit} className='form-container'>
+        <div className='input-group mb-3'>
         <label>Recipient Address:</label>
         <input type="text" value={recipient} onChange={(e) => setRecipient(e.target.value)} required />
-        <label>Amount:</label>
-        <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} required />
-        <button type="submit">Transfer</button>
+          <button type="submit">Transfer</button>
+        </div>
       </form>
+      </div>
       {loadingTransfer && <p>Transferring tokens...</p>}
     </div>
   );
