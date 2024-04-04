@@ -61,11 +61,11 @@ function TokenForm() {
     <div className='container'>
       <div id="form-one">
         <h2>ERC20 Token Balance</h2>
-        <form onSubmit={handleBalanceSubmit} className='form-container'>
-        <div className='input-group mb-3'>
+        <form onSubmit={handleBalanceSubmit} style={{background: '#f4f6f8'}}>
+        <div className='mb-3 form-container'>
           <label>Ethereum Address</label>
           <input type="text" placeholder='Enter Ethereum Address' value={address} onChange={(e) => setAddress(e.target.value)} required />
-          <button type="submit">Submit</button>
+          <button variant="custom" className="custom-button" type="submit">Submit</button>
         </div>
         </form>
       </div>
@@ -75,13 +75,13 @@ function TokenForm() {
       
       <div id="form-two">
       <h2>Transfer ERC20 Tokens</h2>
-      <form onSubmit={handleTransferSubmit} className='form-container'>
-        <div className='input-group mb-3'>
+      <form onSubmit={handleTransferSubmit} style={{background: '#f4f6f8'}}>
+        <div className='mb-3 form-container'>
             <label>Recipient's Ethereum Address</label>
             <input type="text" placeholder='Enter Ethereum Address' value={recipient} onChange={(e) => setRecipient(e.target.value)} required />
             <label>Token Amount</label>
             <input type='text' value={amount} onChange={(e)=>setAmount(e.target.value)} required/>
-          <button type="submit">Transfer</button>
+          <button variant="custom" className="custom-button" type="submit">Transfer</button>
         </div>
       </form>
       </div>
