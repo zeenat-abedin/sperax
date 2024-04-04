@@ -61,7 +61,7 @@ function TokenForm() {
     <div className='container'>
       <div id="form-one">
         <h2>ERC20 Token Balance</h2>
-        <form onSubmit={handleBalanceSubmit} style={{background: '#f4f6f8'}}>
+        <form onSubmit={handleBalanceSubmit} style={{background: '#f4f6f8', width: '450px' }}>
         <div className='mb-3 form-container'>
           <label>Ethereum Address</label>
           <input type="text" placeholder='Enter Ethereum Address' value={address} onChange={(e) => setAddress(e.target.value)} required />
@@ -75,7 +75,7 @@ function TokenForm() {
       
       <div id="form-two">
       <h2>Transfer ERC20 Tokens</h2>
-      <form onSubmit={handleTransferSubmit} style={{background: '#f4f6f8'}}>
+      <form onSubmit={handleTransferSubmit} style={{background: '#f4f6f8', width: '450px'}}>
         <div className='mb-3 form-container'>
             <label>Recipient's Ethereum Address</label>
             <input type="text" placeholder='Enter Ethereum Address' value={recipient} onChange={(e) => setRecipient(e.target.value)} required />
