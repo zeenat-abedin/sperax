@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, Navbar, Nav, NavDropdown, Button } from 'react-bootstrap';
 
+import './custom-styles.css';
+
 function NavBar() {
   return (
     <Navbar bg="light" data-bs-theme="light">
@@ -24,13 +26,11 @@ function NavBar() {
           <NavDropdown.Item href="#">Dropdown Item 1</NavDropdown.Item>
           <NavDropdown.Item href="#">Dropdown Item 2</NavDropdown.Item>
         </NavDropdown>
-              </Nav>
-              <Nav>
-           <Button variant="info">Buy SPA & USDs</Button>
-           <Button variant="outline-primary">Connect Wallet</Button>
-           <Nav.Link href="#"><i className="bi bi-moon"></i></Nav.Link>
-           <Nav.Link href="#"><i className="bi bi-three-dots"></i></Nav.Link>
-         </Nav>
+        </Nav>
+        <Nav className="me-auto">
+           <Button variant="custom" className="custom-button">Buy SPA & USDs</Button>
+           <Button variant="custom" className="custom-button">Connect Wallet</Button>
+        </Nav>
      </Container>
     </Navbar>
   );
