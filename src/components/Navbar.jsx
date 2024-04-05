@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container, Navbar, Nav, NavDropdown, Button } from 'react-bootstrap';
+import { MdOutlineLightMode } from "react-icons/md";
+import { BsThreeDots } from "react-icons/bs";
 
 import './custom-styles.css';
 
@@ -28,10 +30,18 @@ function NavBar() {
         </NavDropdown>
         </Nav>
         <Nav className="me-auto">
-           <Button style={{ background: '#31c1bf', color: '#ffffff', borderRadius: '50px', marginRight: '20px'}}>Buy SPA & USDs</Button>
-           <Button style={{ background: '#31c1bf', color: '#ffffff', borderRadius: '50px'}}>Connect Wallet</Button>
-        </Nav>
-     </Container>
+          <Button style={{ background: '#31c1bf', color: '#ffffff', borderRadius: '40px', marginRight: '10px' }}>Buy SPA & USDs</Button>
+          <NavDropdown id="basic-nav-dropdown">
+          <NavDropdown.Item href="#">Dropdown Item 1</NavDropdown.Item>
+          <NavDropdown.Item href="#">Dropdown Item 2</NavDropdown.Item>
+        </NavDropdown>
+          <Button style={{ background: '#31c1bf', color: '#ffffff', borderRadius: '40px', marginLeft: '10px' }}>Connect Wallet</Button>
+        </Nav>    
+        <div style={{display: 'flex', gap: '20px'}}>
+        <MdOutlineLightMode />
+        <BsThreeDots />
+        </div>
+      </Container>
     </Navbar>
   );
 }
