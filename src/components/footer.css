@@ -1,4 +1,4 @@
-.top{
+.top, .bottom{
     display: flex;
     justify-content: space-between;
 }
@@ -16,4 +16,10 @@
 .middle{
     display: flex;
     justify-content: space-evenly;
+}
+
+.bottom-right{
+   display: flex;
+ justify-content: space-between;
+ gap: 10px;
 }

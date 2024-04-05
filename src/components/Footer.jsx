@@ -14,8 +14,8 @@ const Footer = () => {
           src="../assets/i_sperax_logo_gray.svg"
           alt="Sperax logo"
             />
-            <Button type="text" variant='outlined' style={{border: '1px solid black'}}>Forum</Button>
-            <Button type="text" variant='outlined' style={{border: '1px solid black'}}>Snapshot</Button>
+            <Button type="text" variant='outlined' style={{border: '1px solid black', borderRadius: '20px'}}>Forum</Button>
+            <Button type="text" variant='outlined' style={{border: '1px solid black', borderRadius: '20px'}}>Snapshot</Button>
           </div>
           <div className="right">
             <FaDiscord />
@@ -28,19 +28,29 @@ const Footer = () => {
         <div className="middle">
           <div className="column-one">
             <span><img src="../assets/div.coin_icon_24.png" alt="coin-img-1" /></span> 
+            <p>USDs Arbitrum</p>
           </div>
           <div className="column-two">
             <span><img src="../assets/div.coin_icon_25.png" alt="coin-img-2" /></span> 
+            <p>SPA Arbitrum</p>
           </div>
           <div className="column-three">
-            <span><img src="../assets/div.coin_icon_26.png" alt="coin-img-3" /></span> 
+            <span><img src="../assets/div.coin_icon_26.png" alt="coin-img-3" /></span>
+            <p>ve SPA Arbitrum</p>
           </div>
           <div className="column-four">
-            <span><img src="../assets/div.coin_icon_27.png" alt="coin-img-4" /></span> 
+            <span><img src="../assets/div.coin_icon_27.png" alt="coin-img-4" /></span>
+            <p>w SPA Ethereum</p>
           </div>
         </div>
         <div className="bottom">
-
+          <div className="bottom-left">
+            © 2023 Sperax Inc. All rights reserved.
+          </div>
+          <div className="bottom-right">
+            <p>Terms of Service</p>
+            <p>Privacy Policy</p>
+          </div>
         </div>
       </Container>
     </footer>
