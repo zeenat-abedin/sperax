@@ -25,6 +25,20 @@ const Footer = () => {
             <FaMedium/>
           </div>
         </div>
+        <div className="middle">
+          <div className="column-one">
+            <span><img src="../assets/div.coin_icon_24.png" alt="coin-img-1" /></span> 
+          </div>
+          <div className="column-two">
+            <span><img src="../assets/div.coin_icon_25.png" alt="coin-img-2" /></span> 
+          </div>
+          <div className="column-three">
+            <span><img src="../assets/div.coin_icon_26.png" alt="coin-img-3" /></span> 
+          </div>
+          <div className="column-four">
+            <span><img src="../assets/div.coin_icon_27.png" alt="coin-img-4" /></span> 
+          </div>
+        </div>
         <div className="bottom">
 
         </div>
