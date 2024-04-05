@@ -12,7 +12,7 @@ function NavBar() {
       <Nav className="me-auto">
         <Navbar.Brand href="https://sperax.io/" target="_blank">
         <img
-          src="../SperaxLogo.svg"
+          src="../assets/SperaxLogo.svg"
           height="30"
           className="d-inline-block align-top"
           alt="Sperax logo"
