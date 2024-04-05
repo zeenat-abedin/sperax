@@ -1,5 +1,6 @@
 import { Button, Container } from 'react-bootstrap';
-import { FaDiscord, FaTwitter, FaTelegramPlane, FaGithub, FaMedium} from "react-icons/fa";
+import { FaDiscord, FaTwitter, FaTelegramPlane, FaGithub } from "react-icons/fa";
+import { FaMedium } from "react-icons/fa6";
 
 import "./footer.css";
 
