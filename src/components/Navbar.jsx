@@ -28,8 +28,8 @@ function NavBar() {
         </NavDropdown>
         </Nav>
         <Nav className="me-auto">
-           <Button variant="custom" className="custom-button">Buy SPA & USDs</Button>
-           <Button variant="custom" className="custom-button">Connect Wallet</Button>
+           <Button style={{ background: '#31c1bf', color: '#ffffff', borderRadius: '50px', marginRight: '20px'}}>Buy SPA & USDs</Button>
+           <Button style={{ background: '#31c1bf', color: '#ffffff', borderRadius: '50px'}}>Connect Wallet</Button>
         </Nav>
      </Container>
     </Navbar>
