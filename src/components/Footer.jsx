@@ -4,7 +4,7 @@ import { FaMedium } from "react-icons/fa6";
 
 import "./footer.css";
 
-const Footer = () => {
+function Footer() {
   return (
     <footer style={{ backgroundColor: '#f4f6f8', padding: '20px 0' }}>
       <Container>
